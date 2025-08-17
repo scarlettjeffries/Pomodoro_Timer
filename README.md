@@ -5,5 +5,5 @@
 
 :star2: Learn more about the Pomodoro method [here](https://www.todoist.com/productivity-methods/pomodoro-technique)!
 
-:star2: _Anticipated tech stack:_ HTML / CSS / JavaScript
+:star2: _Current_ tech stack:_ HTML / CSS
 
