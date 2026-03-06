@@ -13,6 +13,7 @@ body {
     gap: 18px;
 }
 
+/* Core timer and buttons */
 h1 {
     color: white;
     font-family: Arial, Helvetica, sans-serif;
@@ -84,6 +85,82 @@ button:hover {
     bottom: 10px;
     right: 10px;
     gap: 8px;
+}
+
+/* Background picker */
+#bg-picker-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.90);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+}
+
+.bg-picker {
+    background: rgba(255,255,255,0.06);
+    padding: 20px;
+    border-radius: 12px;
+    color: white;
+    min-width: 280px;
+    max-width: 90%;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.6);
+}
+
+.bg-picker h3 {
+    margin: 0 0 12px 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+}
+
+.bg-list {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 12px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+
+.bg-option {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    text-align: left;
+    padding: 6px 10px;
+    border-radius: 8px;
+    background: rgba(0,0,0,0.25);
+    border: 1px solid rgba(255,255,255,0.06);
+    color: white;
+    cursor: pointer;
+}
+
+.bg-option:hover { background: rgba(255,255,255,0.06); }
+
+.bg-thumb {
+    width: 96px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 6px;
+    flex-shrink: 0;
+}
+
+.bg-label {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+}
+
+.bg-option.active { outline: 2px solid rgba(255,255,255,0.18); }
+
+.bg-close {
+    padding: 8px 12px;
+    border-radius: 8px;
+    background: rgba(0,0,0,0.25);
+    border: 1px solid rgba(255,255,255,0.08);
+    color: white;
+    cursor: pointer;
 }
 
 h2 {
