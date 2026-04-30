@@ -24,10 +24,10 @@
 
   // Background images from folder
   const bgImages = [
+    'Totoro_and_Mei.gif',
     'Howls_Footsteps.gif',
     'Kiki_In_Grass.gif',
     'The_Wind_Rises.gif',
-    'Totoro_and_Mei.gif'
   ];
 
   // initialize background from saved index
@@ -43,7 +43,7 @@
 
   if (bgImages.length > 0) applyBackground(bgIndex);
 
-  // Open a modal picker when the user wants to change background
+  // Open background picker
   function openBgPicker() {
     // prevent multiple overlays
     if (document.getElementById('bg-picker-overlay')) return;
